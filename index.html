@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .cart {
+            margin: 20px;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <h2>Shopping Cart</h2>
+        <div id="cartItems"></div>
+        <div id="totalPrice"></div>
+        <div>
+            <input type="text" id="itemName" placeholder="Item Name" />
+            <input type="number" id="itemPrice" placeholder="Item Price" />
+            <input type="number" id="itemQuantity" placeholder="Item Quantity" />
+            <button id="addItem">Add Item</button>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+</body>
+</html>
